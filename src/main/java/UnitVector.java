@@ -30,7 +30,7 @@ public class UnitVector {
     
     public void setXComponent(double xComponent)
     {
-        if(xComponent < 0 || xComponent > 1)
+        if(xComponent >= 0 || xComponent <= 1)
         {
             this.xComponent = xComponent;
         }
@@ -41,7 +41,7 @@ public class UnitVector {
     }
     public void setYComponent(double yComponent)
     {
-        if(yComponent < 0 || yComponent > 1)
+        if(yComponent >= 0 || yComponent <= 1)
         {
             this.yComponent = yComponent;
         }
@@ -52,7 +52,7 @@ public class UnitVector {
     }
     public void setZComponent(double zComponent)
     {
-        if(zComponent < 0 || zComponent > 1)
+        if(zComponent >= 0 || zComponent <= 1)
         {
             this.zComponent = zComponent;
         }
