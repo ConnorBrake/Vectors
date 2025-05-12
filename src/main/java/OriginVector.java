@@ -61,19 +61,19 @@ public class OriginVector extends UnitVector{
         return y2;
     }  
 
-    public double getAlphaCosineAngle(double alphaCosineAngle)
+    public double getAlphaCosineAngle()
     {
          double magnitude = Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2));
          this.alphaCosineAngle = Math.toDegrees(Math.acos(x2/magnitude));
     }
     
-    public double getBetaCosineAngle(double alphaCosineAngle)
+    public double getBetaCosineAngle()
     {
          double magnitude = Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2));
          this.betaCosineAngle = Math.toDegrees(Math.acos(y2/magnitude));
     }
     
-    public double getGammaCosineAngle(double alphaCosineAngle)
+    public double getGammaCosineAngle()
     {
          double magnitude = Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2));
          this.gammaCosineAngle = Math.toDegrees(Math.acos(z2/magnitude));
