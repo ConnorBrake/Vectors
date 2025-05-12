@@ -27,12 +27,12 @@ public class OriginVector extends UnitVector{
         this.y2 = y2 * super.getYComponent();
         this.z1 = 0;
         this.z2 = 0;
-        StdDraw.line(x1, y1, x2, y2);
+        StdDraw.line(x1, y1, this.x2, this.y2);
        
         StdDraw.setPenColor(Color.red);
-        StdDraw.line(0.8 * (x2 * Math.cos(0.14) - y2 * Math.sin(0.14)), 0.8 * (x2 * Math.sin(0.14) + y2 * Math.cos(0.14)), x2, y2);
+        StdDraw.line(0.8 * (this.x2 * Math.cos(0.14) - this.y2 * Math.sin(0.14)), 0.8 * (this.x2 * Math.sin(0.14) + this.y2 * Math.cos(0.14)), this.x2, this.y2);
         StdDraw.setPenColor(Color.blue);
-        StdDraw.line(0.8 * (x2 * Math.cos(-0.14) - y2 * Math.sin(-0.14)), 0.8 * (x2 * Math.sin(-0.14) + y2 * Math.cos(-0.14)), x2, y2);
+        StdDraw.line(0.8 * (this.x2 * Math.cos(-0.14) - this.y2 * Math.sin(-0.14)), 0.8 * (this.x2 * Math.sin(-0.14) + this.y2 * Math.cos(-0.14)), this.x2, this.y2);
         StdDraw.setPenColor(Color.black);
     }
     
@@ -60,4 +60,22 @@ public class OriginVector extends UnitVector{
     {
         return y2;
     }  
+
+    public double getAlphaCosineAngle(double alphaCosineAngle)
+    {
+         double magnitude = Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2));
+         this.alphaCosineAngle = Math.toDegrees(Math.acos(x2/magnitude));
+    }
+    
+    public double getBetaCosineAngle(double alphaCosineAngle)
+    {
+         double magnitude = Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2));
+         this.betaCosineAngle = Math.toDegrees(Math.acos(y2/magnitude));
+    }
+    
+    public double getGammaCosineAngle(double alphaCosineAngle)
+    {
+         double magnitude = Math.sqrt(Math.pow(x2, 2) + Math.pow(y2, 2));
+         this.gammaCosineAngle = Math.toDegrees(Math.acos(z2/magnitude));
+    }
 }
