@@ -7,6 +7,8 @@ import java.util.ArrayList;
  * @author Connor Brake
  */
 public class PositionVector extends UnitVector{
+    private String name;
+    
     private double x1;
     private double x2;
     private double y1;
@@ -18,7 +20,8 @@ public class PositionVector extends UnitVector{
     private double betaCosineAngle;
     private double gammaCosineAngle;
     
-    public PositionVector(double x2, double y2)
+    //Creates a Vector Stemming from the Origin to some X and Y Values
+    public PositionVector(double x2, double y2, String Name)
     {
         super(1, 1, 0);
         this.x1 = 0;
@@ -27,6 +30,7 @@ public class PositionVector extends UnitVector{
         this.y2 = y2 * super.getYComponent();
         this.z1 = 0;
         this.z2 = 0;
+        StdDraw.text(this.x2/2, this.y2/2, name);
         StdDraw.line(x1, y1, this.x2, this.y2);
        
         StdDraw.setPenColor(Color.red);
@@ -45,7 +49,7 @@ public class PositionVector extends UnitVector{
             resultantX += oV.get(i).getXComponent();
             resultantY += oV.get(i).getYComponent();
         }
-        PositionVector resultantVector = new PositionVector(resultantX, resultantY);
+        PositionVector resultantVector = new PositionVector(resultantX, resultantY, "Resultant Vector");
         return resultantVector;
     }
     
