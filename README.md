@@ -6,7 +6,7 @@ A simple vectors simulation that harnesses the power of the Princeton made StdDr
 - Position Vectors
 - Resultant Vectors of Position Vectors
 - Customizable Cartesian plane Demensions
-- Dynamic and Static Movement of Vectors on a the xy-plane
+- Dynamic Movement of Vectors on a the xy-plane
 
 ## Features 
 - **Unit Vectors** - Represent vectors with a magnitude of 1 in any direction
