@@ -1,5 +1,5 @@
-# **Vectors.Java**
-A simple vectors simulation that harnesses the power of the Princeton made StdDraw.Java class. 
+# **Vectors.java**
+A simple vectors simulation that harnesses the power of the Princeton made StdDraw.java class. 
 
 ## Currently, the simulation supports:
 - Unit Vectors
