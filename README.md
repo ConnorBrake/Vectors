@@ -5,6 +5,7 @@ A simple vectors simulation that harnesses the power of the Princeton made StdDr
 - Unit Vectors
 - Position Vectors
 - Resultant Vectors of Position Vectors
+- The Alpha, Cosine, and Gamma Angles of Position Vectors
 - Customizable Cartesian plane Demensions
 - Dynamic Movement of Vectors on a the xy-plane
 
