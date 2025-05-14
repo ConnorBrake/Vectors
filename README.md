@@ -17,6 +17,11 @@ A simple vectors simulation that harnesses the power of the Princeton made StdDr
 - **Custom Cartesian Planes** - Represent a Cartesian plane with custom lengths
   ![image](https://github.com/user-attachments/assets/66770d4c-ac65-492a-8bd8-f0464606f6b4)
 
-
 ## Prerequisite 
 - Java JDK 8 (or higher)
+
+## Future Features
+- Labeled Axis, Vectors, and Angles
+- Direction Vectors
+- The xz-plane and yz-plane
+- Projection of Vectors
